@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Thermo.ChromeleonLink.ObjectModel.ChromeleonMappingEntity">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <Members>
+      <Method Name="CheckResultSignal" Hidden="true" />
+      <Method Name="ChromeleonMappingEntity" Hidden="true" />
+      <Method Name="ChromeleonMappingEntity_PropertyChanged" Hidden="true" />
+      <Method Name="GetChromeleonInstrument" Hidden="true" />
+      <Method Name="GetResultExpressions" Hidden="true" />
+      <Field Name="m_Chromeleon" Hidden="true" />
+      <Field Name="m_ChromeleonApiInstrumentMethod" Hidden="true" />
+      <Field Name="m_ChromeleonApiProcessingMethod" Hidden="true" />
+      <Method Name="OnEntityLoaded" Hidden="true" />
+      <Method Name="ParseValidUnknowns" Hidden="true" />
+      <Method Name="ReadInstrumentMethod" Hidden="true" />
+      <Method Name="ReadInstrumentMethods" Hidden="true" />
+      <Method Name="ReadProcessingMethod" Hidden="true" />
+      <Method Name="ReadProcessingMethods" Hidden="true" />
+      <Method Name="UpdateMappedResults" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AEAgIBABEAIABAAgCACAQAAAAAAAAjAAACgAAIAAAAA=</HashCode>
+      <FileName>ChromeleonMappingEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.ChromeleonLink.ObjectModel.ChromeleonMappingResultEntity">
+    <Position X="3.5" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ChromeleonMappingResultEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.Library.EntityDefinition.ChromeleonMappingResultBase">
+    <Position X="3.5" Y="2.25" Width="2.75" />
+    <Members>
+      <Method Name="ChromeleonMappingResultBase" Hidden="true" />
+      <Field Name="EntityName" Hidden="true" />
+      <Field Name="StructureTableName" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="ChromeleonMapping" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Thermo.SampleManager.Library.EntityDefinition.ChromeleonMappingBase">
+    <Position X="0.5" Y="3.25" Width="2.75" />
+    <Members>
+      <Method Name="ChromeleonMappingBase" Hidden="true" />
+      <Field Name="EntityName" Hidden="true" />
+      <Field Name="StructureTableName" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Thermo.ChromeleonLink.ObjectModel.ChromeleonSequenceEntity">
+    <Position X="6.5" Y="0.75" Width="2.5" />
+    <Members>
+      <Method Name="AddByBatchEntry" Hidden="true" />
+      <Method Name="AddByTest" Hidden="true" />
+      <Method Name="AddCustomMappedVariables" Hidden="true" />
+      <Method Name="AddCustomVariables" Hidden="true" />
+      <Method Name="AddMappedCustomVariable" Hidden="true" />
+      <Method Name="AutoName" Hidden="true" />
+      <Method Name="AutoNameEntries" Hidden="true" />
+      <Method Name="AutoPosition" Hidden="true" />
+      <Method Name="CheckLimsmlErrors" Hidden="true" />
+      <Method Name="CheckRetrieveResults" Hidden="true" />
+      <Method Name="ChromeleonSequenceEntity" Hidden="true" />
+      <Method Name="ChromeleonSequenceEntries_ItemAdded" Hidden="true" />
+      <Method Name="FindSequenceEntry" Hidden="true" />
+      <Method Name="GetEntryNameFromMapping" Hidden="true" />
+      <Method Name="GetEntryNameFromMappingBatch" Hidden="true" />
+      <Method Name="GetLimsml" Hidden="true" />
+      <Method Name="GetNameFromMapping" Hidden="true" />
+      <Method Name="GetNameFromMappingBatch" Hidden="true" />
+      <Method Name="GetSequence" Hidden="true" />
+      <Method Name="GetWorkflowRequest" Hidden="true" />
+      <Method Name="InitialiseSequenceFromWorkflow" Hidden="true" />
+      <Event Name="InjectionResultsProcessed" Hidden="true" />
+      <Method Name="IsNotApproved" Hidden="true" />
+      <Method Name="IsNotLinked" Hidden="true" />
+      <Field Name="LimsmlMaxComponents" Hidden="true" />
+      <Field Name="LimsmlReport" Hidden="true" />
+      <Field Name="LimsmlRoutine" Hidden="true" />
+      <Field Name="m_Chromeleon" Hidden="true" />
+      <Field Name="m_Mapping" Hidden="true" />
+      <Method Name="OnEntityLoaded" Hidden="true" />
+      <Method Name="OnInjectionResultsProcessed" Hidden="true" />
+      <Method Name="ProcessLimsml" Hidden="true" />
+      <Method Name="RefreshFromChromeleon" Hidden="true" />
+      <Method Name="RetrieveResults" Hidden="true" />
+      <Method Name="RetrieveResultValues" Hidden="true" />
+      <Method Name="SaveResults" Hidden="true" />
+      <Method Name="SetFromBatch" Hidden="true" />
+      <Method Name="SetFromMapping" Hidden="true" />
+      <Method Name="SetSequence" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Events" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>IEECABBgIaIBCAAAcVCCBUAAAUABgggQYBAAAgcQYAA=</HashCode>
+      <FileName>ChromeleonSequenceEntity.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ChromeleonMapping" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Thermo.SampleManager.Library.EntityDefinition.ChromeleonSequenceBase">
+    <Position X="6.5" Y="3.5" Width="2.5" />
+    <Members>
+      <Method Name="ChromeleonSequenceBase" Hidden="true" />
+      <Field Name="EntityName" Hidden="true" />
+      <Method Name="SetStatus" Hidden="true" />
+      <Field Name="StructureTableName" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Thermo.ChromeleonLink.ObjectModel.ChromeleonSequenceEntryEntity">
+    <Position X="9.25" Y="0.5" Width="2.5" />
+    <Members>
+      <Method Name="AddCustomMappedVariables" Hidden="true" />
+      <Method Name="AddCustomVariables" Hidden="true" />
+      <Method Name="CheckRetrieveResults" Hidden="true" />
+      <Method Name="ChromeleonSequenceEntryEntity" Hidden="true" />
+      <Method Name="GetInjection" Hidden="true" />
+      <Method Name="HasLimsCustomVariables" Hidden="true" />
+      <Method Name="RetrieveResultValues" Hidden="true" />
+      <Method Name="SaveResults" Hidden="true" />
+      <Method Name="SetBatchEntry" Hidden="true" />
+      <Method Name="SetInjection" Hidden="true" />
+      <Method Name="SetTest" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAMAAAAIIAAAAAEIAAAEBAAkAAgAAAAAAAAAEAQAA=</HashCode>
+      <FileName>ChromeleonSequenceEntryEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.Library.EntityDefinition.ChromeleonSequenceEntryBase">
+    <Position X="10.75" Y="3" Width="2.5" />
+    <Members>
+      <Method Name="ChromeleonSequenceEntryBase" Hidden="true" />
+      <Field Name="EntityName" Hidden="true" />
+      <Method Name="SetSampleType" Hidden="true" />
+      <Method Name="SetStatus" Hidden="true" />
+      <Field Name="StructureTableName" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="ChromeleonSequence" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

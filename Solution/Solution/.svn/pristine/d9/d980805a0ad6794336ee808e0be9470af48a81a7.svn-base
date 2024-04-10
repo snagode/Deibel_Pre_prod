@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Thermo.ChromeleonLink.ObjectModel.ChromeleonEntity">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <Members>
+      <Method Name="Chromeleon_PropertyChanged" Hidden="true" />
+      <Event Name="ChromeleonConnected" Hidden="true" />
+      <Event Name="ChromeleonConnectionError" Hidden="true" />
+      <Event Name="ChromeleonDisconnected" Hidden="true" />
+      <Method Name="ChromeleonEntity" Hidden="true" />
+      <Method Name="Connect" Hidden="true" />
+      <Method Name="CreateSequence" Hidden="true" />
+      <Method Name="CreateSequenceByWorkflow" Hidden="true" />
+      <Method Name="CreateWorkflowSequence" Hidden="true" />
+      <Method Name="Disconnect" Hidden="true" />
+      <Method Name="GetFullMachineName" Hidden="true" />
+      <Method Name="GetInstrument" Hidden="true" />
+      <Method Name="GetInstruments" Hidden="true" />
+      <Method Name="GetSequence" Hidden="true" />
+      <Method Name="GetWebApiClient" Hidden="true" />
+      <Method Name="OnConnected" Hidden="true" />
+      <Method Name="OnConnectionError" Hidden="true" />
+      <Method Name="OnDisconnected" Hidden="true" />
+      <Method Name="OnEntityCreated" Hidden="true" />
+      <Method Name="OnEntityLoaded" Hidden="true" />
+      <Method Name="ReadEWorkflows" Hidden="true" />
+      <Method Name="ReadFolders" Hidden="true" />
+      <Method Name="ReadInstrumentMethods" Hidden="true" />
+      <Method Name="ReadInstruments" Hidden="true" />
+      <Method Name="ReadProcessingMethods" Hidden="true" />
+      <Method Name="ReadVaults" Hidden="true" />
+      <Method Name="RefreshSequence" Hidden="true" />
+      <Method Name="ResetConnection" Hidden="true" />
+      <Field Name="ResourcesCreateSequence" Hidden="true" />
+      <Field Name="ResourcesFolders" Hidden="true" />
+      <Field Name="ResourcesGetInstrument" Hidden="true" />
+      <Field Name="ResourcesGetInstrumentMethods" Hidden="true" />
+      <Field Name="ResourcesGetInstruments" Hidden="true" />
+      <Field Name="ResourcesGetNamedResults" Hidden="true" />
+      <Field Name="ResourcesGetProcessingMethods" Hidden="true" />
+      <Field Name="ResourcesGetSequence" Hidden="true" />
+      <Field Name="ResourcesGetUnNamedResults" Hidden="true" />
+      <Field Name="ResourcesGetWorkflows" Hidden="true" />
+      <Field Name="ResourcesUpdateSequence" Hidden="true" />
+      <Method Name="RetrieveNamedResults" Hidden="true" />
+      <Method Name="RetrieveUnNamedResults" Hidden="true" />
+      <Field Name="ServicesCreateSequenceByWorkflow" Hidden="true" />
+      <Field Name="ServicesVaults" Hidden="true" />
+      <Method Name="TrimStart" Hidden="true" />
+      <Field Name="UnwantedUnknownPrefix" Hidden="true" />
+      <Method Name="UpdateSequence" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IBcgARKAAIIjQJQAAFBARIgAYQBSkioIIUIAAQYAAAg=</HashCode>
+      <FileName>ChromeleonEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.ChromeleonLink.ObjectModel.ChromeleonInstrumentEntity">
+    <Position X="3" Y="0.5" Width="3.25" />
+    <Members>
+      <Method Name="ChromeleonInstrument_PropertyChanged" Hidden="true" />
+      <Method Name="ChromeleonInstrumentEntity" Hidden="true" />
+      <Field Name="m_ApiInstrument" Hidden="true" />
+      <Field Name="m_ChromeleonLink" Hidden="true" />
+      <Field Name="m_InstrumentMethods" Hidden="true" />
+      <Method Name="OnEntityLoaded" Hidden="true" />
+      <Method Name="ReadInstrumentMethods" Hidden="true" />
+      <Method Name="UpdateInstrumentFromApi" Hidden="true" />
+      <Method Name="UpdatePositions" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAIgASAgAAACBAAAAAAAEiACAAAQAAEQAIA=</HashCode>
+      <FileName>ChromeleonInstrumentEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.ChromeleonLink.ObjectModel.ChromeleonPropertyEntity">
+    <Position X="6.75" Y="0.5" Width="2.5" />
+    <Members>
+      <Method Name="ChromeleonProperty_PropertyChanged" Hidden="true" />
+      <Method Name="OnEntityLoaded" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>ChromeleonPropertyEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.Library.EntityDefinition.ChromeleonInstrumentBase">
+    <Position X="3.75" Y="4" Width="3.25" />
+    <Members>
+      <Method Name="ChromeleonInstrumentBase" Hidden="true" />
+      <Field Name="EntityName" Hidden="true" />
+      <Field Name="StructureTableName" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Chromeleon" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Thermo.SampleManager.Library.EntityDefinition.ChromeleonBase">
+    <Position X="0.5" Y="3.25" Width="2" />
+    <Members>
+      <Method Name="ChromeleonBase" Hidden="true" />
+      <Field Name="EntityName" Hidden="true" />
+      <Field Name="StructureTableName" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Thermo.SampleManager.Library.EntityDefinition.ChromeleonPropertyBase">
+    <Position X="7.25" Y="2" Width="2.5" />
+    <Members>
+      <Method Name="ChromeleonPropertyBase" Hidden="true" />
+      <Field Name="EntityName" Hidden="true" />
+      <Method Name="SetEntity" Hidden="true" />
+      <Field Name="StructureTableName" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Chromeleon" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

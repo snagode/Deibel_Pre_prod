@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\..\..\Exe\SolutionAssemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <DocumentationFile>..\..\..\Exe\SolutionAssemblies\Thermo.SampleManager.ObjectModel.XML</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CE238D0A-AD99-4430-832A-1FAD7C7571BF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Thermo.SampleManager.ObjectModel</RootNamespace>
+    <AssemblyName>Thermo.SampleManager.ObjectModel</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/Thermo.SampleManager.ObjectModel/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\Exe\SolutionAssemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\Exe\SolutionAssemblies\Thermo.SampleManager.ObjectModel.XML</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfToImage, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\PdfToImage.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Thermo.ChromeleonLink.Data.Objects">
+      <HintPath>..\..\..\Exe\Thermo.ChromeleonLink.Data.Objects.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.Framework.Core, Version=9.3.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\exe\Thermo.Framework.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.Framework.Server, Version=9.3.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\exe\Thermo.Framework.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.Framework.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\exe\Thermo.Framework.Utilities.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Common, Version=9.3.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\exe\Thermo.SampleManager.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Core">
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Internal.ObjectModel">
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Internal.ObjectModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Library, Version=9.3.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\exe\Thermo.SampleManager.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Server.ObjectSupport">
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Server.ObjectSupport.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Server.Services, Version=10.1.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Server.Services.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Server.Workflow">
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Server.Workflow.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Tasks.EntityDefinition, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\exe\SolutionAssemblies\Thermo.SampleManager.Tasks.EntityDefinition.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SM.LIMSML.Helper">
+      <HintPath>..\..\..\Exe\Thermo.SM.LIMSML.Helper.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="AccessLog.cs" />
+    <Compile Include="AnalysisView.cs" />
+    <Compile Include="AnalysisWorksheet.cs" />
+    <Compile Include="AnalysisWorksTempl.cs" />
+    <Compile Include="Approval.cs" />
+    <Compile Include="ArchiveSFormulation.cs" />
+    <Compile Include="Attachment.cs" />
+    <Compile Include="AttachmentHelpers\ImageFileComparer.cs" />
+    <Compile Include="AttachmentHelpers\PdfConverter.cs" />
+    <Compile Include="AttachmentPage.cs" />
+    <Compile Include="ChromeleonLinkObjectModel\ChromeleonEntity.cs" />
+    <Compile Include="ChromeleonLinkObjectModel\ChromeleonInstrumentEntity.cs" />
+    <Compile Include="ChromeleonLinkObjectModel\ChromeleonMappingEntity.cs" />
+    <Compile Include="ChromeleonLinkObjectModel\ChromeleonMappingResultEntity.cs" />
+    <Compile Include="ChromeleonLinkObjectModel\ChromeleonPropertyEntity.cs" />
+    <Compile Include="ChromeleonLinkObjectModel\ChromeleonSequenceEntity.cs" />
+    <Compile Include="ChromeleonLinkObjectModel\ChromeleonSequenceEntryEntity.cs" />
+    <Compile Include="ChromeleonLinkObjectModel\EntryEventArgs.cs" />
+    <Compile Include="ChromeleonLinkObjectModel\WebApi\ChromeleonApiComponent.cs" />
+    <Compile Include="ChromeleonLinkObjectModel\WebApi\ChromeleonApiFolder.cs" />
+    <Compile Include="ChromeleonLinkObjectModel\WebApi\ChromeleonApiInstrument.cs" />
+    <Compile Include="ChromeleonLinkObjectModel\WebApi\ChromeleonApiInstrumentMethod.cs" />
+    <Compile Include="ChromeleonLinkObjectModel\WebApi\ChromeleonApiProcessingMethod.cs" />
+    <Compile Include="ChromeleonLinkObjectModel\WebApi\ChromeleonApiVault.cs" />
+    <Compile Include="ChromeleonLinkObjectModel\WebApi\ChromeleonApiWorkflow.cs" />
+    <Compile Include="ChromeleonLinkObjectModel\WebApi\ErrorEventArgs.cs" />
+    <Compile Include="ChromeleonLinkObjectModel\WebApi\JsonHelper.cs" />
+    <Compile Include="ChromeleonLinkObjectModel\WebApi\WebApiClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChromeleonLinkObjectModel\WebApi\WebApiError.cs" />
+    <Compile Include="CSampleFormulation.cs" />
+    <Compile Include="DailyToolbar.cs" />
+    <Compile Include="DistributionPersonnel.cs" />
+    <Compile Include="ExplorerExpression.cs" />
+    <Compile Include="ExplorerRmbContext.cs" />
+    <Compile Include="FormPage.cs" />
+    <Compile Include="Import Helpers\BaseImportHelper.cs" />
+    <Compile Include="Import Helpers\ExplorerFolderImportHelper.cs" />
+    <Compile Include="Import Helpers\IImportableEntity.cs" />
+    <Compile Include="Import Helpers\ImportCommitResult.cs" />
+    <Compile Include="Import Helpers\ImportExportUtilities.cs" />
+    <Compile Include="Import Helpers\ImportValidationResult.cs" />
+    <Compile Include="Import Helpers\VersionedAnalysisImportHelper.cs" />
+    <Compile Include="Import Helpers\WorkflowImportHelper.cs" />
+    <Compile Include="ReportLayoutHeader.cs" />
+    <Compile Include="ReportLayoutLink.cs" />
+    <Compile Include="LotDetails.cs" />
+    <Compile Include="LotReservation.cs" />
+    <Compile Include="LotInventory.cs" />
+    <Compile Include="LotRelation.cs" />
+    <Compile Include="ModularReport.cs" />
+    <Compile Include="ModularReportItem.cs" />
+    <Compile Include="SampleFormulation.cs" />
+    <Compile Include="EntityTemplateField.cs" />
+    <Compile Include="SamplePrepWorksheet.cs" />
+    <Compile Include="SubstanceGhsHazard.cs" />
+    <Compile Include="SubstanceGhsPictogram.cs" />
+    <Compile Include="SubstanceGhsPrecautionary.cs" />
+    <Compile Include="TestPreparationWorksheet.cs" />
+    <Compile Include="WebFavorite.cs" />
+    <Compile Include="WebRecentItems.cs" />
+    <Compile Include="WorkflowActionRole.cs" />
+    <Compile Include="WorkflowEventType.cs" />
+    <Compile Include="EntityTemplateProperty.cs" />
+    <Compile Include="EntityTemplate.cs" />
+    <Compile Include="ExplorerFolderLink.cs" />
+    <Compile Include="WorkflowJournal.cs" />
+    <Compile Include="WorkflowLink.cs" />
+    <Compile Include="WorkflowRole.cs" />
+    <Compile Include="WorkflowStateCondition.cs" />
+    <Compile Include="WorkflowNode.cs" />
+    <Compile Include="WorkflowState.cs" />
+    <Compile Include="WorkflowActionType.cs" />
+    <Compile Include="Workflow.cs" />
+    <Compile Include="ReportTemplate.cs" />
+    <Compile Include="ExplorerFolderIcon.cs" />
+    <Compile Include="InstrumentPartHistory.cs" />
+    <Compile Include="InstrumentHistory.cs" />
+    <Compile Include="InstrumentPartLinkHistory.cs" />
+    <Compile Include="InstrumentCalibSample.cs" />
+    <Compile Include="InstrumentEvent.cs" />
+    <Compile Include="InstrumentPartEvent.cs" />
+    <Compile Include="InstrumentPropertyTemplate.cs" />
+    <Compile Include="StockBatch.cs" />
+    <Compile Include="StockBatchProperty.cs" />
+    <Compile Include="StockOrderItem.cs" />
+    <Compile Include="StockProperty.cs" />
+    <Compile Include="TrainingHistory.cs" />
+    <Compile Include="SchedulePointEvent.cs" />
+    <Compile Include="SchedulePointEventBase.cs" />
+    <Compile Include="SchedulePointEventTest.cs" />
+    <Compile Include="ISchedulePointEventTest.cs" />
+    <Compile Include="ISchedulePointItem.cs" />
+    <Compile Include="SchedulePointTestSchedule.cs" />
+    <Compile Include="PersonnelTrainingHistory.cs" />
+    <Compile Include="SchedulePointAnalysis.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LocationType.cs" />
+    <Compile Include="LocationTypeList.cs" />
+    <Compile Include="StockOrder.cs" />
+    <Compile Include="Substance.cs" />
+    <Compile Include="SubstanceHazard.cs" />
+    <Compile Include="SubstanceRisk.cs" />
+    <Compile Include="SubstanceSafety.cs" />
+    <Compile Include="VersionedAnalysisStockUse.cs" />
+    <Compile Include="InstrumentPartLink.cs" />
+    <Compile Include="InstrumentPartLinkTemplate.cs" />
+    <Compile Include="InstrumentPartTemplate.cs" />
+    <Compile Include="InstrumentPart.cs" />
+    <Compile Include="InstrumentProperty.cs" />
+    <Compile Include="InstrumentTemplate.cs" />
+    <Compile Include="InstrumentTraining.cs" />
+    <Compile Include="PersonnelTraining.cs" />
+    <Compile Include="PreparationTraining.cs" />
+    <Compile Include="ScheduleGroup.cs" />
+    <Compile Include="SupplierDetail.cs" />
+    <Compile Include="TrainingApproval.cs" />
+    <Compile Include="ArchiveAuditData.cs" />
+    <Compile Include="ArchiveAuditEvent.cs" />
+    <Compile Include="ArchiveAuditTrans.cs" />
+    <Compile Include="ArchiveAuditValues.cs" />
+    <Compile Include="ArchiveAuditView.cs" />
+    <Compile Include="ArchiveBatchEntry.cs" />
+    <Compile Include="ArchiveBatchHeader.cs" />
+    <Compile Include="ArchiveEsigData.cs" />
+    <Compile Include="ArchiveEsigDataView.cs" />
+    <Compile Include="ArchiveEsigEvent.cs" />
+    <Compile Include="ArchiveJobHeader.cs" />
+    <Compile Include="ArchiveResult.cs" />
+    <Compile Include="ArchiveSample.cs" />
+    <Compile Include="ArchiveSjView.cs" />
+    <Compile Include="ArchiveStView.cs" />
+    <Compile Include="ArchiveTest.cs" />
+    <Compile Include="AuditData.cs" />
+    <Compile Include="AuditEvent.cs" />
+    <Compile Include="AuditTransaction.cs" />
+    <Compile Include="AuditValues.cs" />
+    <Compile Include="AuditView.cs" />
+    <Compile Include="Barmenu.cs" />
+    <Compile Include="BatchEntry.cs" />
+    <Compile Include="BatchHeader.cs" />
+    <Compile Include="BatchSqcActiveView.cs" />
+    <Compile Include="BatchSqcCommittedView.cs" />
+    <Compile Include="BatchSqcHeader.cs" />
+    <Compile Include="BatchTmplEntry.cs" />
+    <Compile Include="BatchTmplHeader.cs" />
+    <Compile Include="BatchTmplSqc.cs" />
+    <Compile Include="BlobValues.cs" />
+    <Compile Include="BlRelationship.cs" />
+    <Compile Include="BlRelationshipClause.cs" />
+    <Compile Include="BlType.cs" />
+    <Compile Include="CalcFunction.cs" />
+    <Compile Include="CalcFunctionParameter.cs" />
+    <Compile Include="Calculation.cs" />
+    <Compile Include="CAuditData.cs" />
+    <Compile Include="CAuditEvent.cs" />
+    <Compile Include="CAuditTransaction.cs" />
+    <Compile Include="CAuditValues.cs" />
+    <Compile Include="CAuditView.cs" />
+    <Compile Include="CBatchEntry.cs" />
+    <Compile Include="CBatchHeader.cs" />
+    <Compile Include="CertDestination.cs" />
+    <Compile Include="Certificate.cs" />
+    <Compile Include="CertificateEntry.cs" />
+    <Compile Include="CertificateTemplate.cs" />
+    <Compile Include="CertSection.cs" />
+    <Compile Include="CertSectionData.cs" />
+    <Compile Include="CertSectionPrompt.cs" />
+    <Compile Include="CertSectionResult.cs" />
+    <Compile Include="CEsigData.cs" />
+    <Compile Include="CEsigDataView.cs" />
+    <Compile Include="CEsigEvent.cs" />
+    <Compile Include="CgiScript.cs" />
+    <Compile Include="Chapter.cs" />
+    <Compile Include="ChargeEntry.cs" />
+    <Compile Include="ChargeHeader.cs" />
+    <Compile Include="CJobHeader.cs" />
+    <Compile Include="ClientAccess.cs" />
+    <Compile Include="ColumnSetEntry.cs" />
+    <Compile Include="ColumnSetHeader.cs" />
+    <Compile Include="ComplistEntryView.cs" />
+    <Compile Include="ComplistHeaderView.cs" />
+    <Compile Include="ComponentEquivalence.cs" />
+    <Compile Include="ComponentView.cs" />
+    <Compile Include="ConfigHeader.cs" />
+    <Compile Include="ConfigItem.cs" />
+    <Compile Include="Contents.cs" />
+    <Compile Include="Supplier.cs" />
+    <Compile Include="StockInventory.cs" />
+    <Compile Include="Stock.cs" />
+    <Compile Include="LanguageForm.cs" />
+    <Compile Include="Language.cs" />
+    <Compile Include="VersionedAnalysisMatrixRow.cs" />
+    <Compile Include="VersionedAnalysisMatrix.cs" />
+    <Compile Include="MlpLimit.cs" />
+    <Compile Include="CResult.cs" />
+    <Compile Include="Criteria.cs" />
+    <Compile Include="CriteriaCondition.cs" />
+    <Compile Include="CriteriaHeader.cs" />
+    <Compile Include="CriteriaOrder.cs" />
+    <Compile Include="CriteriaSaved.cs" />
+    <Compile Include="CriteriaVariable.cs" />
+    <Compile Include="CSampJobView.cs" />
+    <Compile Include="CSample.cs" />
+    <Compile Include="CSampTestView.cs" />
+    <Compile Include="CTest.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="DataTrailEntry.cs" />
+    <Compile Include="Destination.cs" />
+    <Compile Include="DestinationFailure.cs" />
+    <Compile Include="Distribution.cs" />
+    <Compile Include="EnhancedWorksheet.cs" />
+    <Compile Include="EntityDefinition.cs" />
+    <Compile Include="EntityDefinitionField.cs" />
+    <Compile Include="EntityDefinitionProperty.cs" />
+    <Compile Include="EntityGenericProperty.cs" />
+    <Compile Include="EsigChecksumFields.cs" />
+    <Compile Include="EsigData.cs" />
+    <Compile Include="EsigDataView.cs" />
+    <Compile Include="EsigEvent.cs" />
+    <Compile Include="EsigMenuLevelView.cs" />
+    <Compile Include="ExplorerAux.cs" />
+    <Compile Include="ExplorerAuxFields.cs" />
+    <Compile Include="ExplorerCabinet.cs" />
+    <Compile Include="ExplorerCabinetRole.cs" />
+    <Compile Include="ExplorerColumn.cs" />
+    <Compile Include="ExplorerColumnUser.cs" />
+    <Compile Include="ExplorerFolder.cs" />
+    <Compile Include="ExplorerGroup.cs" />
+    <Compile Include="ExplorerHierarchy.cs" />
+    <Compile Include="ExplorerHierarchyLevel.cs" />
+    <Compile Include="ExplorerRmb.cs" />
+    <Compile Include="ExplorerRole.cs" />
+    <Compile Include="Favourite.cs" />
+    <Compile Include="Form.cs" />
+    <Compile Include="GroupHeader.cs" />
+    <Compile Include="Grouplink.cs" />
+    <Compile Include="Hazard.cs" />
+    <Compile Include="HelpContext.cs" />
+    <Compile Include="Icon.cs" />
+    <Compile Include="IncChecklistActions.cs" />
+    <Compile Include="IncChecklistResults.cs" />
+    <Compile Include="IncidentChecklist.cs" />
+    <Compile Include="Incidents.cs" />
+    <Compile Include="IncidentTemplate.cs" />
+    <Compile Include="Increments.cs" />
+    <Compile Include="InfomakerLink.cs" />
+    <Compile Include="InfomakerParameters.cs" />
+    <Compile Include="InspectHistoryView.cs" />
+    <Compile Include="InspectionHeader.cs" />
+    <Compile Include="InspectionRecord.cs" />
+    <Compile Include="Inspector.cs" />
+    <Compile Include="Instrument.cs" />
+    <Compile Include="Interface.cs" />
+    <Compile Include="InterfaceAction.cs" />
+    <Compile Include="InterfaceField.cs" />
+    <Compile Include="JobHeader.cs" />
+    <Compile Include="JobInspectView.cs" />
+    <Compile Include="JobLotView.cs" />
+    <Compile Include="JobtabHeader.cs" />
+    <Compile Include="JobTemplate.cs" />
+    <Compile Include="LabelTemplate.cs" />
+    <Compile Include="License.cs" />
+    <Compile Include="LimitCalculation.cs" />
+    <Compile Include="LimitPhraseEntry.cs" />
+    <Compile Include="LimitPhraseHeader.cs" />
+    <Compile Include="LimitView.cs" />
+    <Compile Include="LimsmlEntityAction.cs" />
+    <Compile Include="LimsmlEntityParam.cs" />
+    <Compile Include="LimsTable.cs" />
+    <Compile Include="ListResult.cs" />
+    <Compile Include="ListResultFormat.cs" />
+    <Compile Include="Location.cs" />
+    <Compile Include="LogSchedEntry.cs" />
+    <Compile Include="LogSchedHeader.cs" />
+    <Compile Include="LotTemplate.cs" />
+    <Compile Include="MasterMenu.cs" />
+    <Compile Include="Menu.cs" />
+    <Compile Include="MenuIeView.cs" />
+    <Compile Include="MenuMytasks.cs" />
+    <Compile Include="MenuToolbar.cs" />
+    <Compile Include="Messaging.cs" />
+    <Compile Include="MlpAnalysis.cs" />
+    <Compile Include="MlpComponents.cs" />
+    <Compile Include="MlpFamily.cs" />
+    <Compile Include="MlpFamilyHeader.cs" />
+    <Compile Include="MlpHeader.cs" />
+    <Compile Include="MlpLatestVersionView.cs" />
+    <Compile Include="MlpLevel.cs" />
+    <Compile Include="MlpSchedule.cs" />
+    <Compile Include="MlpValues.cs" />
+    <Compile Include="MlpVersionsView.cs" />
+    <Compile Include="MlpView.cs" />
+    <Compile Include="MtFields.cs" />
+    <Compile Include="ObsoleteEsigMenuLevel.cs" />
+    <Compile Include="ObsoleteMlpVersions.cs" />
+    <Compile Include="Password.cs" />
+    <Compile Include="Personnel.cs" />
+    <Compile Include="Phrase.cs" />
+    <Compile Include="PhraseHeader.cs" />
+    <Compile Include="Preparation.cs" />
+    <Compile Include="Printer.cs" />
+    <Compile Include="ProjectInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RBatchFailures.cs" />
+    <Compile Include="RBatchReport.cs" />
+    <Compile Include="RBatchTmplComponentsList.cs" />
+    <Compile Include="Report.cs" />
+    <Compile Include="Reporter.cs" />
+    <Compile Include="ReportTmplAdvOpts.cs" />
+    <Compile Include="ReportTmplDataBlock.cs" />
+    <Compile Include="ReportTmplDocFooter.cs" />
+    <Compile Include="ReportTmplDocHeader.cs" />
+    <Compile Include="ReportTmplFont.cs" />
+    <Compile Include="ReportTmplGraphBlock.cs" />
+    <Compile Include="ReportTmplHeader.cs" />
+    <Compile Include="ReportTmplLayout.cs" />
+    <Compile Include="ReportTmplTabs.cs" />
+    <Compile Include="ReportTmplTextBlock.cs" />
+    <Compile Include="Result.cs" />
+    <Compile Include="RoleAssignment.cs" />
+    <Compile Include="RoleEntry.cs" />
+    <Compile Include="RoleEntryDetails.cs" />
+    <Compile Include="RoleHeader.cs" />
+    <Compile Include="RoleMenu.cs" />
+    <Compile Include="RSampleWorksheet.cs" />
+    <Compile Include="Rule.cs" />
+    <Compile Include="RuleCount.cs" />
+    <Compile Include="RWorkProfileComponentsList.cs" />
+    <Compile Include="RWorksheet.cs" />
+    <Compile Include="RWorksheetBody.cs" />
+    <Compile Include="SampJobTestResult.cs" />
+    <Compile Include="SampJobView.cs" />
+    <Compile Include="Sample.cs" />
+    <Compile Include="SampleInspectView.cs" />
+    <Compile Include="SamplePlanEntry.cs" />
+    <Compile Include="SamplePlanHeader.cs" />
+    <Compile Include="SamplePlanMatrix.cs" />
+    <Compile Include="SamplePlanRule.cs" />
+    <Compile Include="SamplePoint.cs" />
+    <Compile Include="SchedulePoint.cs" />
+    <Compile Include="Schedule.cs" />
+    <Compile Include="SampleWorksheet.cs" />
+    <Compile Include="SamplingProcedure.cs" />
+    <Compile Include="SampTestResult.cs" />
+    <Compile Include="SampTestView.cs" />
+    <Compile Include="SampTmplHeader.cs" />
+    <Compile Include="SigFigs.cs" />
+    <Compile Include="SmwMenu.cs" />
+    <Compile Include="Standard.cs" />
+    <Compile Include="StandardConcentration.cs" />
+    <Compile Include="StandardVersions.cs" />
+    <Compile Include="StatAtribDouble.cs" />
+    <Compile Include="StatAtribSingle.cs" />
+    <Compile Include="StatCode.cs" />
+    <Compile Include="StatVarblSingle.cs" />
+    <Compile Include="Supertemplatelist.cs" />
+    <Compile Include="Syntax.cs" />
+    <Compile Include="TabCriteria.cs" />
+    <Compile Include="TabGui.cs" />
+    <Compile Include="TabHeader.cs" />
+    <Compile Include="TableRelationship.cs" />
+    <Compile Include="TableRelationshipClause.cs" />
+    <Compile Include="TabOutputColumns.cs" />
+    <Compile Include="TabResultCriteria.cs" />
+    <Compile Include="TemplateFields.cs" />
+    <Compile Include="Test.cs" />
+    <Compile Include="TestInspectView.cs" />
+    <Compile Include="TestSchedEntry.cs" />
+    <Compile Include="TestSchedHeader.cs" />
+    <Compile Include="Timerqueue.cs" />
+    <Compile Include="TimerSchedule.cs" />
+    <Compile Include="TrainingCourse.cs" />
+    <Compile Include="UnitAlias.cs" />
+    <Compile Include="UnitHeader.cs" />
+    <Compile Include="UserSetting.cs" />
+    <Compile Include="UserView.cs" />
+    <Compile Include="UserWorksheet.cs" />
+    <Compile Include="VersionedAnalysis.cs" />
+    <Compile Include="VersionedAnalysisTraining.cs" />
+    <Compile Include="VersionedCategoryComponent.cs" />
+    <Compile Include="VersionedCLEntry.cs" />
+    <Compile Include="VersionedCLHeader.cs" />
+    <Compile Include="VersionedComponent.cs" />
+    <Compile Include="WebLink.cs" />
+    <Compile Include="WebMenu.cs" />
+    <Compile Include="WebMenuItem.cs" />
+    <Compile Include="WebMenuSection.cs" />
+    <Compile Include="ScheduleCalendarPeriod.cs" />
+    <Compile Include="ScheduleCalendar.cs" />
+    <Compile Include="WorkflowNodeParameter.cs" />
+    <Compile Include="WorkingSchedule.cs" />
+    <Compile Include="WorkingScheduleHeader.cs" />
+    <Compile Include="WorkProfile.cs" />
+    <Compile Include="Worksheet.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\..\..\Exe\SolutionAssemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\Exe\SolutionAssemblies\Thermo.SampleManager.Tasks.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BD1A26B7-2795-4FA9-BB4B-2F6AD2D8B7AA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Thermo.SampleManager.Tasks</RootNamespace>
+    <AssemblyName>Thermo.SampleManager.Tasks</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/Thermo.SampleManager.Tasks/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\Exe\SolutionAssemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Thermo.ChromeleonLink.Data.Objects">
+      <HintPath>..\..\..\Exe\Thermo.ChromeleonLink.Data.Objects.dll</HintPath>
+    </Reference>
+    <Reference Include="Thermo.Framework.Core, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.Framework.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.Framework.Core.Message">
+      <HintPath>..\..\..\Exe\Thermo.Framework.Core.Message.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.Framework.Server, Version=9.3.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.Framework.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.Framework.Server.Services">
+      <HintPath>..\..\..\Exe\Thermo.Framework.Server.Services.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.Framework.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.Framework.Utilities.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.Informatics.Common.Forms.Core, Version=10.0.0.0, Culture=neutral, PublicKeyToken=4e9594daec488be9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.Informatics.Common.Forms.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Core, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Internal.ObjectModel, Version=10.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Internal.ObjectModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Library, Version=9.2.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Server.Mvc">
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Server.Mvc.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Server.ObjectSupport, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Server.ObjectSupport.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Server.Services, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Server.Services.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Server.Workflow, Version=10.1.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Server.Workflow.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Tasks.EntityDefinition, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\SolutionAssemblies\Thermo.SampleManager.Tasks.EntityDefinition.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Tasks.FormDefinition, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\SolutionAssemblies\Thermo.SampleManager.Tasks.FormDefinition.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SM.LIMSML.Helper, Version=9.2.1.0, Culture=neutral, PublicKeyToken=c8f5c7c0d4405e65">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.SM.LIMSML.Helper.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="AttachmentEntityTask.cs" />
+    <Compile Include="BackgroundTasks\InactiveUsersTask.cs" />
+    <Compile Include="BackgroundTasks\GenericBackgroundReportingTask.cs" />
+    <Compile Include="BackgroundTasks\ActiveRecordTask.cs" />
+    <Compile Include="BackgroundTasks\LotsCheckTask.cs" />
+    <Compile Include="BackgroundTasks\RunWorkflowActionBackgroundTask.cs" />
+    <Compile Include="BackgroundTasks\RunWorkflowBackgroundTask.cs" />
+    <Compile Include="BaseListPrintReportingTask.cs" />
+    <Compile Include="BrowseTask.cs" />
+    <Compile Include="AttachmentTask.cs" />
+    <Compile Include="ChromeleonLinkTasks\ChromeleonCreateSequenceByBatchTask.cs" />
+    <Compile Include="ChromeleonLinkTasks\ChromeleonCreateSequenceBySamplesTask.cs" />
+    <Compile Include="ChromeleonLinkTasks\ChromeleonCreateSequenceByTestsTask.cs" />
+    <Compile Include="ChromeleonLinkTasks\ChromeleonCreateSequenceTask.cs" />
+    <Compile Include="ChromeleonLinkTasks\ChromeleonInstrumentStatusTask.cs" />
+    <Compile Include="ChromeleonLinkTasks\ChromeleonMappingTask.cs" />
+    <Compile Include="ChromeleonLinkTasks\ChromeleonRefreshSequenceTask.cs" />
+    <Compile Include="ChromeleonLinkTasks\ChromeleonResultsEntryPollTask.cs" />
+    <Compile Include="ChromeleonLinkTasks\ChromeleonSequenceAuthorizeTask.cs" />
+    <Compile Include="ChromeleonLinkTasks\ChromeleonSequenceCancelTask.cs" />
+    <Compile Include="ChromeleonLinkTasks\ChromeleonSequenceGetResultsTask.cs" />
+    <Compile Include="ChromeleonLinkTasks\ChromeleonSequenceTask.cs" />
+    <Compile Include="ChromeleonLinkTasks\ChromeleonTask.cs" />
+    <Compile Include="ChromeleonLinkTasks\HelperFunctions\SequenceGetResultsHelper.cs" />
+    <Compile Include="CreateTimerQueueTask.cs" />
+    <Compile Include="DefaultModalFormTask.cs" />
+    <Compile Include="FormulaDesignerTask.cs" />
+    <Compile Include="Helpers\XmlProcessor.cs" />
+    <Compile Include="ImportEntityResultsTask.cs" />
+    <Compile Include="LabtableListCriteriaTask.cs" />
+    <Compile Include="ActiveDesktopTask.cs" />
+    <Compile Include="ReportLayoutRunTask.cs" />
+    <Compile Include="LabtablePrintCriteriaTask.cs" />
+    <Compile Include="ReportLayoutHeaderTask.cs" />
+    <Compile Include="LotDetailsTask.cs" />
+    <Compile Include="LotInventoryDashboardTask.cs" />
+    <Compile Include="LotReconcileTask.cs" />
+    <Compile Include="LotRelationDashboardTask.cs" />
+    <Compile Include="ModularGenericReportingTask.cs" />
+    <Compile Include="ModularReportRun.cs" />
+    <Compile Include="ModularReportTask.cs" />
+    <Compile Include="NamedLicenseGroupEditorTask.cs" />
+    <Compile Include="PrinterDestinationTask.cs" />
+    <Compile Include="FormulaEditorTableTask.cs" />
+    <Compile Include="LabtablePrintTask.cs" />
+    <Compile Include="LabtableListTask.cs" />
+    <Compile Include="ReportTemplatePreviewTask.cs" />
+    <Compile Include="SampleAdminResampleTask.cs" />
+    <Compile Include="LimsmlEntityActionTask.cs" />
+    <Compile Include="ExportEntityTask.cs" />
+    <Compile Include="RoleHeaderTask.cs" />
+    <Compile Include="GroupHeaderTask.cs" />
+    <Compile Include="ReplaceLocalizationTags.cs" />
+    <Compile Include="GenericUserPromptMandyTask.cs" />
+    <Compile Include="ProjectInfoTask.cs" />
+    <Compile Include="CustomerTask.cs" />
+    <Compile Include="CriteriaBrowseTask.cs" />
+    <Compile Include="SelectEntityTask.cs" />
+    <Compile Include="PerformanceIndexTask.cs" />
+    <Compile Include="StockBatchConsumptionTask.cs" />
+    <Compile Include="StockBatchTask.cs" />
+    <Compile Include="GenerateLocalizationTags.cs" />
+    <Compile Include="WorkflowTaskProxy.cs" />
+    <Compile Include="WorkflowDocumentTask.cs" />
+    <Compile Include="WorkflowActionTask.cs" />
+    <Compile Include="Pages\VersionPage.cs" />
+    <Compile Include="SampleMergeTask.cs" />
+    <Compile Include="SampleSplitTask.cs" />
+    <Compile Include="WorkflowTestHarnessTask.cs" />
+    <Compile Include="TestScheduleTask.cs" />
+    <Compile Include="DefaultPropertyTask.cs" />
+    <Compile Include="Pages\AuditPage.cs" />
+    <Compile Include="BackgroundTasks\MailReportTask.cs" />
+    <Compile Include="BackgroundTasks\TrainingRecordCheckTask.cs" />
+    <Compile Include="BackgroundTasks\StockCheckTask.cs" />
+    <Compile Include="BackgroundTasks\InstrumentCheckTask.cs" />
+    <Compile Include="BackgroundTasks\SchedulerTask.cs" />
+    <Compile Include="BaseReportingTask.cs" />
+    <Compile Include="Business Objects\IJournal.cs" />
+    <Compile Include="Business Objects\JournalBase.cs" />
+    <Compile Include="Business Objects\LogMessaging.cs" />
+    <Compile Include="Business Objects\ScheduleToCalendar.cs" />
+    <Compile Include="Business Objects\LimsmlHelper.cs" />
+    <Compile Include="Business Objects\ScheduleLoginManager.cs" />
+    <Compile Include="BuildEntityTask.cs" />
+    <Compile Include="Business Objects\JournalWorkflow.cs" />
+    <Compile Include="Pages\InspectionPage.cs" />
+    <Compile Include="Pages\DefaultPage.cs" />
+    <Compile Include="Pages\EsigPage.cs" />
+    <Compile Include="Pages\LinksPage.cs" />
+    <Compile Include="TableDefaultsTask.cs" />
+    <Compile Include="FormulaEditorTask.cs" />
+    <Compile Include="Pages\PropertyListPage.cs" />
+    <Compile Include="Pages\WorkflowJournalPage.cs" />
+    <Compile Include="Helpers\AttachmentHelperExitedEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pages\AttachmentPage.cs" />
+    <Compile Include="SampleAdminTask.cs" />
+    <Compile Include="SampleAdminBaseTask.cs" />
+    <Compile Include="SampleLoginTask.cs" />
+    <Compile Include="SingleEntityReportingTask.cs" />
+    <Compile Include="WorkflowEventTypeTask.cs" />
+    <Compile Include="EntityTemplatePromptTask.cs" />
+    <Compile Include="EntityTemplateTask.cs" />
+    <Compile Include="SyntaxTask.cs" />
+    <Compile Include="WorkflowRunTask.cs" />
+    <Compile Include="WorkflowSpyTask.cs" />
+    <Compile Include="WorkflowStateTask.cs" />
+    <Compile Include="WorkflowActionTypeTask.cs" />
+    <Compile Include="CriteriaGenericReportingTask.cs" />
+    <Compile Include="LocationInstrumentDashTask.cs" />
+    <Compile Include="LocationSampleDashTask.cs" />
+    <Compile Include="GenericReportingTask.cs" />
+    <Compile Include="ReportTemplateTask.cs" />
+    <Compile Include="DefaultPromptFormTask.cs" />
+    <Compile Include="Startup\CustomStartupTask.cs" />
+    <Compile Include="StockOrderStatusTask.cs" />
+    <Compile Include="DefaultSingleEntityTask.cs" />
+    <Compile Include="InstrumentCalibrationCompleteTask.cs" />
+    <Compile Include="InstrumentPartHistoryTask.cs" />
+    <Compile Include="InstrumentPartAvailableTask.cs" />
+    <Compile Include="InstrumentPartUnavailableTask.cs" />
+    <Compile Include="InstrumentPartCommentTask.cs" />
+    <Compile Include="InstrumentPartServiceTask.cs" />
+    <Compile Include="ScheduleCalendarTask.cs" />
+    <Compile Include="FormModifyTask.cs" />
+    <Compile Include="ScheduleGroupLoginTask.cs" />
+    <Compile Include="PreparationTrainingHistoryTask.cs" />
+    <Compile Include="StockBatchDashTask.cs" />
+    <Compile Include="StockBatchMoveTask.cs" />
+    <Compile Include="StockBatchOverviewDashTask.cs" />
+    <Compile Include="StockBatchSplitTask.cs" />
+    <Compile Include="StockDashTask.cs" />
+    <Compile Include="StockOverviewDashTask.cs" />
+    <Compile Include="VersionedAnalysisTrainingHistoryTask.cs" />
+    <Compile Include="InstrumentTrainingHistoryTask.cs" />
+    <Compile Include="ScheduleLoginTask.cs" />
+    <Compile Include="StockBatchReconcileTask.cs" />
+    <Compile Include="OperatorTrainingHistoryTask.cs" />
+    <Compile Include="SubstanceTask.cs" />
+    <Compile Include="LanguageTask.cs" />
+    <Compile Include="TrainingCourseTask.cs" />
+    <Compile Include="OperatorTrainingUpdateTask.cs" />
+    <Compile Include="TrainingCourseExplorerTask.cs" />
+    <Compile Include="LocationTypeTask.cs" />
+    <Compile Include="ChargeHeaderTask.cs" />
+    <Compile Include="InstrumentTask.cs" />
+    <Compile Include="InstrumentTemplateTask.cs" />
+    <Compile Include="GenericUserPromptTask.cs" />
+    <Compile Include="InstrumentTask_PartGridAdd.cs" />
+    <Compile Include="InstrumentUnavailableTask.cs" />
+    <Compile Include="InstrumentAvailableTask.cs" />
+    <Compile Include="InstrumentCommentTask.cs" />
+    <Compile Include="InstrumentServiceTask.cs" />
+    <Compile Include="InstrumentHistoryTask.cs" />
+    <Compile Include="InstrumentCalibrationTask.cs" />
+    <Compile Include="InstrumentPartCalibrationTask.cs" />
+    <Compile Include="LocationTask.cs" />
+    <Compile Include="StockOrderTask.cs" />
+    <Compile Include="SamplingProcedureTask.cs" />
+    <Compile Include="IconTask.cs" />
+    <Compile Include="InstrumentPartTask.cs" />
+    <Compile Include="InstrumentPartTemplateTask.cs" />
+    <Compile Include="ScheduleGroupTask.cs" />
+    <Compile Include="SupplierTask.cs" />
+    <Compile Include="StockTask.cs" />
+    <Compile Include="ExplorerAuxTask.cs" />
+    <Compile Include="ExplorerFolderTask.cs" />
+    <Compile Include="PersonnelTask.cs" />
+    <Compile Include="PreparationTask.cs" />
+    <Compile Include="Business Objects\Scheduler.cs" />
+    <Compile Include="ExplorerHierarchyTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DefaultFormTask.cs" />
+    <Compile Include="LabelTemplateTask.cs" />
+    <Compile Include="MasterMenuTask.cs" />
+    <Compile Include="GenericLabtableTask.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScheduleTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnitTask.cs" />
+    <Compile Include="VersionedAnalysisTask.cs" />
+    <Compile Include="WebMenuSectionTask.cs" />
+    <Compile Include="WorkflowTask.cs" />
+    <Compile Include="WorksheetPrintCriteriaTask.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SampleManagerObjectModel\SampleManagerObjectModel.csproj">
+      <Project>{CE238D0A-AD99-4430-832A-1FAD7C7571BF}</Project>
+      <Name>SampleManagerObjectModel</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

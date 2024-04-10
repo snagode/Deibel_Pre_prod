@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EBE25653-E355-4486-B681-E0387EAFFBF6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Customization.Tasks</RootNamespace>
+    <AssemblyName>Customization.Tasks</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/Customization.Tasks/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\Exe\SolutionAssemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\..\Exe\SolutionAssemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v14.2">
+      <HintPath>..\..\..\Exe\DevExpress.Data.v14.2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="EPPlus, Version=5.7.2.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.5.7.2\lib\net45\EPPlus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=1.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IO.RecyclableMemoryStream.1.4.1\lib\net45\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Thermo.Framework.Core, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.Framework.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.Framework.Server, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.Framework.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.Framework.Server.Tasks">
+      <HintPath>..\..\..\Exe\Thermo.Framework.Server.Tasks.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.Framework.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.Framework.Utilities.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.Informatics.Common.Forms.Core">
+      <HintPath>..\..\..\Exe\Thermo.Informatics.Common.Forms.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Core">
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Integration">
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Integration.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Internal.ObjectModel, Version=11.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Internal.ObjectModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Library, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.ObjectModel, Version=11.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\SolutionAssemblies\Thermo.SampleManager.ObjectModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Server, Version=11.0.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Server.Mvc">
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Server.Mvc.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Server.ObjectSupport, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Server.ObjectSupport.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Server.Services, Version=11.0.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Server.Services.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Server.Tasks">
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Server.Tasks.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Server.Workflow">
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Server.Workflow.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Tasks, Version=10.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\SolutionAssemblies\Thermo.SampleManager.Tasks.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Tasks.EntityDefinition, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\SolutionAssemblies\Thermo.SampleManager.Tasks.EntityDefinition.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Tasks.FormDefinition, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\SolutionAssemblies\Thermo.SampleManager.Tasks.FormDefinition.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABCTaskWorkflow.cs" />
+    <Compile Include="AddTestWhenResultPresumptive.cs" />
+    <Compile Include="AnalysisPricing.cs" />
+    <Compile Include="AuthorizeConfirmOnPendingResults.cs" />
+    <Compile Include="AuthorizeCustomerConfirmation.cs" />
+    <Compile Include="AutoPopulateTestWorkflow.cs" />
+    <Compile Include="BillCustomerBGTask.cs" />
+    <Compile Include="BillCustomerPreviewTask.cs" />
+    <Compile Include="BillCustomerTask.cs" />
+    <Compile Include="BIllingStatusUpdateBGTask.cs" />
+    <Compile Include="ChangeBillingStatusTask.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="CreateCustomerAPI.cs" />
+    <Compile Include="CreateDepartment.cs" />
+    <Compile Include="Credit_Hold.cs" />
+    <Compile Include="CustomerEmailNotifications.cs" />
+    <Compile Include="CustomerPricingTask.cs" />
+    <Compile Include="CustomerTaskExtended.cs" />
+    <Compile Include="CUSTOMER_COMPONENTS_EMP.cs" />
+    <Compile Include="EmailNotificationJobLogin.cs" />
+    <Compile Include="EmailNotification_SampleRefrigerated.cs" />
+    <Compile Include="FinanaceApiBilled25th.cs" />
+    <Compile Include="FinanceApiBilled10th.cs" />
+    <Compile Include="JobAuthorisedNotification.cs" />
+    <Compile Include="JobLoggedInNotification.cs" />
+    <Compile Include="LogsMaintainInDB.cs" />
+    <Compile Include="MatrixQueueImport.cs" />
+    <Compile Include="MatrixQueueLogin.cs" />
+    <Compile Include="MatrixSampleResetLoginFlag.cs" />
+    <Compile Include="NonBilledJobstoFinanace.cs" />
+    <Compile Include="MoveFileAzureToLocal.cs" />
+    <Compile Include="NotificationLims.cs" />
+    <Compile Include="NotificationResultEmpty.cs" />
+    <Compile Include="PushFilesLocalToAzure.cs" />
+    <Compile Include="ReportBilled10th.cs" />
+    <Compile Include="ReportBilled25th.cs" />
+    <Compile Include="Report_Jobs_Not_Test_Authorised.cs" />
+    <Compile Include="Report_Jobs_Test_Not_Authorised.cs" />
+    <Compile Include="ResultNotificationTesting.cs" />
+    <Compile Include="SageIntact.cs" />
+    <Compile Include="FtpLindtMailReport1.cs" />
+    <Compile Include="FtpLoginQueue.cs" />
+    <Compile Include="FtpSampleResetLoginFlag.cs" />
+    <Compile Include="LindtReportMoveToArchive.cs" />
+    <Compile Include="MASBillingBackgroundTask.cs" />
+    <Compile Include="MASBillingTask.cs" />
+    <Compile Include="MASBillTransferedFilesStatusBG.cs" />
+    <Compile Include="NetworkConnection.cs" />
+    <Compile Include="OpenXmlHelper.cs" />
+    <Compile Include="PersonnalModification.cs" />
+    <Compile Include="SampleAuthorisedCSVWorkflow.cs" />
+    <Compile Include="SampleAuthorisedNotification.cs" />
+    <Compile Include="ShelfLifeStudy.cs" />
+    <Compile Include="SingleResultFailedNotification.cs" />
+    <Compile Include="SingleSampleFailedNotification.cs" />
+    <Compile Include="TestBGTask.cs" />
+    <Compile Include="TestPropertySheet.cs" />
+    <Compile Include="TestSchedulePricing.cs" />
+    <Compile Include="TestScheduleTaskExtended.cs" />
+    <Compile Include="VersionedAnalysisExtendedTask.cs" />
+    <Compile Include="WebQueueCreateJobTask.cs" />
+    <Compile Include="DeibelJobAddSamplesTask.cs" />
+    <Compile Include="DeibelJobCopyTask.cs" />
+    <Compile Include="DeibelJobFromSamplesTask.cs" />
+    <Compile Include="DeibelJobLoginTask.cs" />
+    <Compile Include="DeibelJobNewJobTask.cs" />
+    <Compile Include="DeibelJobsFormTask.cs" />
+    <Compile Include="DeibelNewFtpJobTask.cs" />
+    <Compile Include="DeibelSampleAdminBaseTask.cs" />
+    <Compile Include="DeibelSampleAdminTask.cs" />
+    <Compile Include="DeibelUtils.cs" />
+    <Compile Include="Properties\FTP\DeibelXmlWriter.cs" />
+    <Compile Include="BadReportsTask.cs" />
+    <Compile Include="Properties\FTP\FtpImportTask.cs" />
+    <Compile Include="Properties\FTP\FtpSampleTask.cs" />
+    <Compile Include="Properties\FTP\FtpUnmappedBackgroundTask.cs" />
+    <Compile Include="Properties\FTP\FtpUnmappedInteractiveTask.cs" />
+    <Compile Include="Properties\FTP\FtpUnmappedUtils.cs" />
+    <Compile Include="GenItfHeaderTask.cs" />
+    <Compile Include="Properties\FTP\IMReportingTask.cs" />
+    <Compile Include="LabelPrintTask.cs" />
+    <Compile Include="Properties\FTP\LimsmlReader.cs" />
+    <Compile Include="Logins\DeibelCopyFtpExistingJob.cs" />
+    <Compile Include="Logins\DeibelCopySamples.cs" />
+    <Compile Include="Logins\DeibelCopyFtpNewJob.cs" />
+    <Compile Include="Logins\DeibelModifyJobs.cs" />
+    <Compile Include="Logins\DeibelLoginSamples.cs" />
+    <Compile Include="Logins\DeibelLoginJobs.cs" />
+    <Compile Include="Logins\DeibelCopySamplesNewJob.cs" />
+    <Compile Include="Logins\DeibelCopySamplesExistingJob.cs" />
+    <Compile Include="Logins\DeibelCopyJobs.cs" />
+    <Compile Include="Logins\DeibelModifySamples.cs" />
+    <Compile Include="Logins\ExtendedJobLoginBase.cs" />
+    <Compile Include="Logins\ExtendedSampleLoginBase.cs" />
+    <Compile Include="Logins\Login Functions\FunctionCustomerProduct.cs" />
+    <Compile Include="Logins\Login Functions\FunctionDefaultGroup.cs" />
+    <Compile Include="Logins\Login Functions\FunctionOfficePhone.cs" />
+    <Compile Include="Logins\Login Functions\FunctionInvoiceToName.cs" />
+    <Compile Include="Logins\Login Functions\FunctionReportToName.cs" />
+    <Compile Include="Logins\LoginUtils.cs" />
+    <Compile Include="LwpQueueBackgroundTask.cs" />
+    <Compile Include="MlpDestroyTask.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RedirectTask.cs" />
+    <Compile Include="ReportManager.cs" />
+    <Compile Include="SampFieldChangerTask.cs" />
+    <Compile Include="SampleImageTask.cs" />
+    <Compile Include="WebQueueImport.cs" />
+    <Compile Include="WebQueueExport.cs" />
+    <Compile Include="WebQueueLoginTask.cs" />
+    <Compile Include="WebSampleTask.cs" />
+    <Compile Include="WorkflowResultSpecTask.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CustomizationObjectModel\CustomizationObjectModel.csproj">
+      <Project>{261a7656-c235-4be3-a66b-6baa46413b40}</Project>
+      <Name>CustomizationObjectModel</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,5 @@
+C:\Thermo\SampleManager\Server\SMUAT\Solution\SampleManagerCore\SampleManagerTasks\obj\x86\Debug\SampleManagerTasks.csprojResolveAssemblyReference.cache
+C:\Thermo\SampleManager\Server\SMUAT\Exe\SolutionAssemblies\Thermo.SampleManager.Tasks.dll
+C:\Thermo\SampleManager\Server\SMUAT\Exe\SolutionAssemblies\Thermo.SampleManager.Tasks.pdb
+C:\Thermo\SampleManager\Server\SMUAT\Solution\SampleManagerCore\SampleManagerTasks\obj\x86\Debug\Thermo.SampleManager.Tasks.dll
+C:\Thermo\SampleManager\Server\SMUAT\Solution\SampleManagerCore\SampleManagerTasks\obj\x86\Debug\Thermo.SampleManager.Tasks.pdb

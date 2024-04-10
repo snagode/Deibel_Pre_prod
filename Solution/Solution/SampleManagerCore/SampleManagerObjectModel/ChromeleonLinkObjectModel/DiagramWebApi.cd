@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Thermo.ChromeleonLink.ObjectModel.WebApi.ErrorEventArgs">
+    <Position X="5.25" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WebApi\ErrorEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.ChromeleonLink.ObjectModel.WebApi.JsonHelper">
+    <Position X="5.25" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>WebApi\JsonHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.ChromeleonLink.ObjectModel.WebApi.WebApiClient">
+    <Position X="0.75" Y="0.75" Width="1.75" />
+    <Members>
+      <Field Name="JsonContentType" Hidden="true" />
+      <Field Name="NullErrorMessage" Hidden="true" />
+      <Field Name="PostMethod" Hidden="true" />
+      <Field Name="PutMethod" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IKAAAAAAQAIAAABAGEAAAgAADAAAAAIAAAAAABIAAAg=</HashCode>
+      <FileName>WebApi\WebApiClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.ChromeleonLink.ObjectModel.WebApi.WebApiError">
+    <Position X="3" Y="2.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAoAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WebApi\WebApiError.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C52A3D6E-4B7A-482C-B4E0-6F60F87EF10E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Thermo.SampleManager.WebApiTasks</RootNamespace>
+    <AssemblyName>Thermo.SampleManager.WebApiTasks</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\Exe\SolutionAssemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\Exe\SolutionAssemblies\Thermo.SampleManager.WebApiTasks.XML</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\..\Exe\SolutionAssemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>..\..\..\Exe\SolutionAssemblies\Thermo.SampleManager.WebApiTasks.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Thermo.Framework.Core, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.Framework.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.Framework.Server, Version=9.3.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.Framework.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.Framework.Server.Services">
+      <HintPath>..\..\..\Exe\Thermo.Framework.Server.Services.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.Framework.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.Framework.Utilities.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.Informatics.Common.Forms.Core, Version=10.0.0.0, Culture=neutral, PublicKeyToken=4e9594daec488be9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.Informatics.Common.Forms.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Core, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Internal.ObjectModel, Version=10.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Internal.ObjectModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Library, Version=9.2.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Server.Mvc">
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Server.Mvc.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Server.ObjectSupport, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Server.ObjectSupport.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Server.Services, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.SampleManager.Server.Services.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SampleManager.Tasks.EntityDefinition, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\SolutionAssemblies\Thermo.SampleManager.Tasks.EntityDefinition.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Thermo.SM.LIMSML.Helper, Version=12.0.0.0, Culture=neutral, PublicKeyToken=0188ae5eafc3a044, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Exe\Thermo.SM.LIMSML.Helper.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblyInfo.cs">
+      <Link>CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Data\Object.cs" />
+    <Compile Include="Data\DataUtils.cs" />
+    <Compile Include="Data\SystemInfo.cs" />
+    <Compile Include="Data\Reference.cs" />
+    <Compile Include="Data\About.cs" />
+    <Compile Include="Mobile\Extension\MobileFunctionAttribute.cs" />
+    <Compile Include="Mobile\Extension\MobileFeatureAttribute.cs" />
+    <Compile Include="Mobile\Data\Column.cs" />
+    <Compile Include="Mobile\Data\FunctionResultEntryByTest.cs" />
+    <Compile Include="Mobile\Data\SessionChecksumList.cs" />
+    <Compile Include="Mobile\Data\PromptFile.cs" />
+    <Compile Include="Mobile\Data\PromptResultNumeric.cs" />
+    <Compile Include="Mobile\Data\ResultData.cs" />
+    <Compile Include="Mobile\Data\DataCollectionItem.cs" />
+    <Compile Include="Mobile\Data\Signature.cs" />
+    <Compile Include="Mobile\Data\ResultValue.cs" />
+    <Compile Include="Mobile\Data\ResultDataRow.cs" />
+    <Compile Include="Mobile\Data\DataCollection.cs" />
+    <Compile Include="Mobile\Data\SelectedValues.cs" />
+    <Compile Include="Mobile\Data\MobileObject.cs" />
+    <Compile Include="Mobile\Data\FunctionBasicReceive.cs" />
+    <Compile Include="Mobile\Data\FunctionBasicMove.cs" />
+    <Compile Include="Mobile\Data\FunctionBasicResultEntry.cs" />
+    <Compile Include="Mobile\Data\GenerateHash.cs" />
+    <Compile Include="Mobile\Data\CalendarEra.cs" />
+    <Compile Include="Mobile\Data\CalendarMonths.cs" />
+    <Compile Include="Mobile\Data\CalendarDays.cs" />
+    <Compile Include="Mobile\Data\CalendarPatterns.cs" />
+    <Compile Include="Mobile\Data\Calendars.cs" />
+    <Compile Include="Mobile\Data\Calendar.cs" />
+    <Compile Include="Mobile\Data\KeyValue.cs" />
+    <Compile Include="Mobile\Data\KeyValues.cs" />
+    <Compile Include="Mobile\Data\MessageMode.cs" />
+    <Compile Include="Mobile\Data\MobileLocale.cs" />
+    <Compile Include="Mobile\Data\MessageGroup.cs" />
+    <Compile Include="Mobile\Data\PercentFormat.cs" />
+    <Compile Include="Mobile\Data\CurrencyFormat.cs" />
+    <Compile Include="Mobile\Data\NumberFormat.cs" />
+    <Compile Include="Mobile\Data\Locale.cs" />
+    <Compile Include="Mobile\Data\MessageString.cs" />
+    <Compile Include="Mobile\Data\Interval.cs" />
+    <Compile Include="Mobile\Data\PromptPackedDecimal.cs" />
+    <Compile Include="Mobile\Data\PromptIdentity.cs" />
+    <Compile Include="Mobile\Data\AuxiliaryValues.cs" />
+    <Compile Include="Mobile\Data\Entity.cs" />
+    <Compile Include="Mobile\Data\SearchPromptValues.cs" />
+    <Compile Include="Mobile\Data\PromptHierarchyLink.cs" />
+    <Compile Include="Mobile\Data\PromptList.cs" />
+    <Compile Include="Mobile\Data\PromptChoice.cs" />
+    <Compile Include="Mobile\Data\PromptBoolean.cs" />
+    <Compile Include="Mobile\Data\PromptCheckbox.cs" />
+    <Compile Include="Mobile\Data\PromptDateTime.cs" />
+    <Compile Include="Mobile\Data\PromptInterval.cs" />
+    <Compile Include="Mobile\Data\PromptReal.cs" />
+    <Compile Include="Mobile\Data\PromptInteger.cs" />
+    <Compile Include="Mobile\Data\PromptLink.cs" />
+    <Compile Include="Mobile\Data\PromptText.cs" />
+    <Compile Include="Mobile\Data\SearchColumn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mobile\Data\SearchData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mobile\Data\SearchDataRow.cs" />
+    <Compile Include="Mobile\Data\Prompt.cs" />
+    <Compile Include="Mobile\Data\SearchDescription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mobile\Data\SearchResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mobile\Data\FunctionAuxiliary.cs" />
+    <Compile Include="Mobile\Data\FunctionResultEntry.cs" />
+    <Compile Include="Mobile\Data\Function.cs" />
+    <Compile Include="Mobile\Data\SessionResponse.cs" />
+    <Compile Include="Mobile\Data\Session.cs" />
+    <Compile Include="Mobile\AuxiliaryTask.cs" />
+    <Compile Include="FileTask.cs" />
+    <Compile Include="Mobile\ResultTask.cs" />
+    <Compile Include="Mobile\EntityTask.cs" />
+    <Compile Include="Mobile\FeatureTask.cs" />
+    <Compile Include="Mobile\LocaleTask.cs" />
+    <Compile Include="Mobile\FunctionTask.cs" />
+    <Compile Include="Mobile\PromptTask.cs" />
+    <Compile Include="Mobile\BrowseTask.cs" />
+    <Compile Include="Mobile\SearchTask.cs" />
+    <Compile Include="Mobile\SystemTask.cs" />
+    <Compile Include="WebApiLimsmlBaseTask.cs" />
+    <Compile Include="UtilityTask.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Mobile\SessionTask.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SampleManagerObjectModel\SampleManagerObjectModel.csproj">
+      <Project>{ce238d0a-ad99-4430-832a-1fad7c7571bf}</Project>
+      <Name>SampleManagerObjectModel</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\SampleManagerTasks\SampleManagerTasks.csproj">
+      <Project>{bd1a26b7-2795-4fa9-bb4b-2f6ad2d8b7aa}</Project>
+      <Name>SampleManagerTasks</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\ClassDiagram.cd" />
+    <None Include="Mobile\Data\ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

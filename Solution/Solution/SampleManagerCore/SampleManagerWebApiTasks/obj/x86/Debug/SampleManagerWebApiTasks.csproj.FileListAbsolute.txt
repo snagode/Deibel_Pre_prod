@@ -1,0 +1,6 @@
+C:\Thermo\SampleManager\Server\SMUAT\Exe\SolutionAssemblies\Thermo.SampleManager.WebApiTasks.XML
+C:\Thermo\SampleManager\Server\SMUAT\Exe\SolutionAssemblies\Thermo.SampleManager.WebApiTasks.dll
+C:\Thermo\SampleManager\Server\SMUAT\Exe\SolutionAssemblies\Thermo.SampleManager.WebApiTasks.pdb
+C:\Thermo\SampleManager\Server\SMUAT\Solution\SampleManagerCore\SampleManagerWebApiTasks\obj\x86\Debug\SampleManagerWebApiTasks.csprojResolveAssemblyReference.cache
+C:\Thermo\SampleManager\Server\SMUAT\Solution\SampleManagerCore\SampleManagerWebApiTasks\obj\x86\Debug\Thermo.SampleManager.WebApiTasks.dll
+C:\Thermo\SampleManager\Server\SMUAT\Solution\SampleManagerCore\SampleManagerWebApiTasks\obj\x86\Debug\Thermo.SampleManager.WebApiTasks.pdb

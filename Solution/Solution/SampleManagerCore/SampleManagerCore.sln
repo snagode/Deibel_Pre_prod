@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleManagerTasks", "SampleManagerTasks\SampleManagerTasks.csproj", "{BD1A26B7-2795-4FA9-BB4B-2F6AD2D8B7AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleManagerObjectModel", "SampleManagerObjectModel\SampleManagerObjectModel.csproj", "{CE238D0A-AD99-4430-832A-1FAD7C7571BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleManagerWebApiTasks", "SampleManagerWebApiTasks\SampleManagerWebApiTasks.csproj", "{C52A3D6E-4B7A-482C-B4E0-6F60F87EF10E}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://uspgh-lims-p1.amer.thermo.com:8080/tfs/samplemanager
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SampleManagerTasks\\SampleManagerTasks.csproj
+		SccProjectName1 = SampleManagerTasks
+		SccLocalPath1 = SampleManagerTasks
+		SccProjectUniqueName2 = SampleManagerObjectModel\\SampleManagerObjectModel.csproj
+		SccProjectName2 = SampleManagerObjectModel
+		SccLocalPath2 = SampleManagerObjectModel
+		SccProjectUniqueName3 = SampleManagerWebApiTasks\\SampleManagerWebApiTasks.csproj
+		SccProjectName3 = SampleManagerWebApiTasks
+		SccLocalPath3 = SampleManagerWebApiTasks
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD1A26B7-2795-4FA9-BB4B-2F6AD2D8B7AA}.Debug|x86.ActiveCfg = Debug|x86
+		{BD1A26B7-2795-4FA9-BB4B-2F6AD2D8B7AA}.Debug|x86.Build.0 = Debug|x86
+		{BD1A26B7-2795-4FA9-BB4B-2F6AD2D8B7AA}.Release|x86.ActiveCfg = Release|x86
+		{BD1A26B7-2795-4FA9-BB4B-2F6AD2D8B7AA}.Release|x86.Build.0 = Release|x86
+		{CE238D0A-AD99-4430-832A-1FAD7C7571BF}.Debug|x86.ActiveCfg = Debug|x86
+		{CE238D0A-AD99-4430-832A-1FAD7C7571BF}.Debug|x86.Build.0 = Debug|x86
+		{CE238D0A-AD99-4430-832A-1FAD7C7571BF}.Release|x86.ActiveCfg = Release|x86
+		{CE238D0A-AD99-4430-832A-1FAD7C7571BF}.Release|x86.Build.0 = Release|x86
+		{C52A3D6E-4B7A-482C-B4E0-6F60F87EF10E}.Debug|x86.ActiveCfg = Debug|x86
+		{C52A3D6E-4B7A-482C-B4E0-6F60F87EF10E}.Debug|x86.Build.0 = Debug|x86
+		{C52A3D6E-4B7A-482C-B4E0-6F60F87EF10E}.Release|x86.ActiveCfg = Release|x86
+		{C52A3D6E-4B7A-482C-B4E0-6F60F87EF10E}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

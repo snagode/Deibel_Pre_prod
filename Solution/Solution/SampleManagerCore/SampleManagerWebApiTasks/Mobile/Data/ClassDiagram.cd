@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.Session">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <Members>
+      <Field Name="FuncsChecksum" Hidden="true" />
+      <Field Name="LocaleChecksum" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAEIAACBAgACCAgAAAEAAAAAAAgAAAA=</HashCode>
+      <FileName>Mobile\Data\Session.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.Locale">
+    <Position X="11.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAQAAAAAAAAQAAAAAAEAEAAigAAAAAAA=</HashCode>
+      <FileName>Mobile\Data\Locale.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="NumberFormat" />
+      <Property Name="Calendars" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.MobileLocale">
+    <Position X="6.25" Y="0.5" Width="2" />
+    <AssociationLine Name="MessageStrings" Type="Thermo.SampleManager.WebApiTasks.Mobile.Data.KeyValues&lt;TValue&gt;">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="1.256" Y="0.06" Height="0.182" Width="1.212" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Mobile\Data\MobileLocale.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MessageStrings" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.MessageString">
+    <Position X="8.5" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Mobile\Data\MessageString.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.KeyValues&lt;TValue&gt;" Collapsed="true">
+    <Position X="8.25" Y="2.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Mobile\Data\KeyValues.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.Calendars">
+    <Position X="14.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mobile\Data\Calendars.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Standard" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.NumberFormat">
+    <Position X="14.75" Y="2.25" Width="2" />
+    <AssociationLine Name="Currency" Type="Thermo.SampleManager.WebApiTasks.Mobile.Data.CurrencyFormat">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.878" Y="-0.155" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAIAAAQgAAAAQAAQCAAAABEAABgACAAAAAI=</HashCode>
+      <FileName>Mobile\Data\NumberFormat.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Percent" />
+      <Property Name="Currency" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.Calendar">
+    <Position X="17.5" Y="0.5" Width="2.25" />
+    <AssociationLine Name="Months" Type="Thermo.SampleManager.WebApiTasks.Mobile.Data.CalendarMonths" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.75" Y="2.938" />
+        <Point X="20.469" Y="2.938" />
+        <Point X="20.469" Y="4.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.154" Y="0.365" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Patterns" Type="Thermo.SampleManager.WebApiTasks.Mobile.Data.CalendarPatterns">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.177" Y="0.382" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAIAAACCAAAAAAAAQAAAgCQAAAAAAAAEQAAAAAAAUAA=</HashCode>
+      <FileName>Mobile\Data\Calendar.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Days" />
+      <Property Name="Months" />
+      <Property Name="Patterns" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.CalendarPatterns">
+    <Position X="17.5" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAIAAAEAAAAAAgAAgAAQAABQAAAA=</HashCode>
+      <FileName>Mobile\Data\CalendarPatterns.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.CalendarMonths">
+    <Position X="20" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mobile\Data\CalendarMonths.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.CalendarDays">
+    <Position X="21.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAgAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mobile\Data\CalendarDays.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.CalendarEra">
+    <Position X="21" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Mobile\Data\CalendarEra.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.CurrencyFormat">
+    <Position X="12.5" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABQAgQAEAAAAAAAAEAAAAACAA=</HashCode>
+      <FileName>Mobile\Data\CurrencyFormat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.PercentFormat">
+    <Position X="10.5" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABQAgQAEAAAAAAAAEAAAAACAA=</HashCode>
+      <FileName>Mobile\Data\PercentFormat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.MessageGroup">
+    <Position X="5.5" Y="4.25" Width="2.5" />
+    <AssociationLine Name="MessageStrings" Type="Thermo.SampleManager.WebApiTasks.Mobile.Data.KeyValues&lt;TValue&gt;">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.539" Y="-0.919" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAIAAAAAAAAAAAAQAAABAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Mobile\Data\MessageGroup.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MessageStrings" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.SessionResponse">
+    <Position X="3" Y="0.5" Width="2.25" />
+    <AssociationLine Name="Locale" Type="Thermo.SampleManager.WebApiTasks.Mobile.Data.MobileLocale">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.204" Y="0.175" Height="0.182" Width="0.881" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAEAAAAABABwAQAAAQAAAAAAAABAAAAAAARAAACAAAA=</HashCode>
+      <FileName>Mobile\Data\SessionResponse.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Locale" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.SearchResponse">
+    <Position X="6.5" Y="10.25" Width="2.75" />
+    <AssociationLine Name="SearchDescriptions" Type="Thermo.SampleManager.WebApiTasks.Mobile.Data.SearchDescription">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.256" Y="0.164" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Mobile\Data\SearchResponse.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="SearchDescriptions" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.SearchDescription">
+    <Position X="0.75" Y="10" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGgAAAAAQkAAAAAAAAAAQAAAAAAAAAAAAAAggEBAA=</HashCode>
+      <FileName>Mobile\Data\SearchDescription.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Columns" />
+      <Property Name="Prompts" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.SearchDataRow">
+    <Position X="11" Y="21" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAIAAAAAAAAAAAgAAAABAA=</HashCode>
+      <FileName>Mobile\Data\SearchDataRow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.SearchColumn">
+    <Position X="4.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mobile\Data\SearchColumn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.Prompt">
+    <Position X="1" Y="13.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAEAQAAAQAhAQAAAAAAAAAAEAAAAAIIAAAAAA=</HashCode>
+      <FileName>Mobile\Data\Prompt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.PromptBoolean">
+    <Position X="3.75" Y="13.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Mobile\Data\PromptBoolean.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.PromptCheckbox">
+    <Position X="1" Y="17" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Mobile\Data\PromptCheckbox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.PromptChoice">
+    <Position X="3.5" Y="17" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Mobile\Data\PromptChoice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.PromptDateTime">
+    <Position X="6" Y="17" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Mobile\Data\PromptDateTime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.PromptHierarchyLink">
+    <Position X="6.25" Y="14" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAQAAAAAAAACAgAAAAAAA=</HashCode>
+      <FileName>Mobile\Data\PromptHierarchyLink.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.PromptInteger">
+    <Position X="8.75" Y="17" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Mobile\Data\PromptInteger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.PromptInterval">
+    <Position X="8.75" Y="14" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Mobile\Data\PromptInterval.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.PromptLink">
+    <Position X="11.25" Y="14" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEIAAAAAAAAAAAAgAAAAAAAAAAAAACAgAAAAAAA=</HashCode>
+      <FileName>Mobile\Data\PromptLink.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.PromptList">
+    <Position X="11.25" Y="17" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAEAAAAAAAAAAAAAAAAAkAAAAAAA=</HashCode>
+      <FileName>Mobile\Data\PromptList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.PromptReal">
+    <Position X="13.75" Y="14" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Mobile\Data\PromptReal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.PromptIdentity">
+    <Position X="13.75" Y="17" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAABAAAAAAAAABAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Mobile\Data\PromptIdentity.cs</FileName>
+      <NewMemberFileName>Mobile\Data\PromptText.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.PromptText">
+    <Position X="16.25" Y="17" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAABAAAAAAAAABAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Mobile\Data\PromptText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.PromptPackedDecimal">
+    <Position X="16.5" Y="14" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Mobile\Data\PromptPackedDecimal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.SelectedValues">
+    <Position X="0.5" Y="25.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Mobile\Data\SelectedValues.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.SearchData">
+    <Position X="6.5" Y="21" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAIAQAAAQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mobile\Data\SearchData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.FunctionAuxiliary">
+    <Position X="18" Y="21.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAQAAAAAAAAAAAAAAACAAAAAAAQAABAA=</HashCode>
+      <FileName>Mobile\Data\FunctionAuxiliary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.Function">
+    <Position X="14.5" Y="21" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AQABgQAAAAAgAAEAAiAAAAQAAAAAAAAAACEACAEIAQA=</HashCode>
+      <FileName>Mobile\Data\Function.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.AuxiliaryValues">
+    <Position X="1" Y="21" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAgAAAQAAA=</HashCode>
+      <FileName>Mobile\Data\AuxiliaryValues.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.SearchPromptValues">
+    <Position X="4.25" Y="21" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAgAAAAAAAAAAEAAAAgAAAQAAA=</HashCode>
+      <FileName>Mobile\Data\SearchPromptValues.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.ResultValue">
+    <Position X="15.5" Y="27.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAABAAAQAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Mobile\Data\ResultValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.ResultData">
+    <Position X="4" Y="30" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAQAAAEAAEAAAAAACAAAAAAEAAAAAAAAIAA=</HashCode>
+      <FileName>Mobile\Data\ResultData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.ResultDataRow">
+    <Position X="12.25" Y="26.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>oAAAAACEAAAIACAAABBgAAQABACgAAgAAAgAAAAgBgI=</HashCode>
+      <FileName>Mobile\Data\ResultDataRow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.DataCollection">
+    <Position X="3.25" Y="25.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIEAAAAAQAEAAAIAACAQAAAAAAAAAAAACkAgCAAA=</HashCode>
+      <FileName>Mobile\Data\DataCollection.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Columns" />
+      <Property Name="Rows" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.DataCollectionItem">
+    <Position X="9" Y="26.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAgAAAAAAAAAAAEABAAAAAAAQAAAAA=</HashCode>
+      <FileName>Mobile\Data\DataCollectionItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.Column">
+    <Position X="6.75" Y="26.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAAAAAABAAAAAAAAEQAAAABIAAAAQAAAQBEAAA=</HashCode>
+      <FileName>Mobile\Data\Column.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thermo.SampleManager.WebApiTasks.Mobile.Data.Signature">
+    <Position X="7.5" Y="32.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAIAAAAAAAMAAAAAAAAAQAAAAAAAIAA=</HashCode>
+      <FileName>Mobile\Data\Signature.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,17 @@
+
+SampleAdminBaseTask.cs
+
+Added default value assignment to Jobs, Samples, Tests to avoid increment retrieval error
+
+
+
+EntityTemplateTask.cs
+
+Added phrase list loading when Default Value is set to 'Call Function'
+
+
+
+VersionedAnalysis.cs
+
+Components reordering was not checking for component exists in collection and would throw error.
+Added component checking to avoid the error.
